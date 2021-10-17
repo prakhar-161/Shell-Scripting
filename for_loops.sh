@@ -51,3 +51,18 @@ for (( i=0; i<5; i++ ))
 do 
     echo $i
 done
+
+# Method - 3 - FOR Loop for executing linux commands
+for command in ls pwd date
+do 
+    echo "-------------------$command-------------------"
+    $command 
+done
+
+for item in *
+do 
+    if [ -f $item ]
+    then
+        echo $item
+    fi
+done
